@@ -1,0 +1,34 @@
+// part 1
+
+let lambda = function() {
+    word = "supercalifragilisticexpialidocious";
+    return word.split(/(?=c)/g);
+}
+
+console.log(lambda());
+
+// part 2
+
+let lambda2 = function(originalString, modifiedString, numberReplaced, length) {
+    var word = "supercalifragilisticexpialidocious";
+    var result = "";
+    var count = 0;
+    for (var i=0; i<word.length; i++) {
+        if (word[i] == "a") {
+            result = result + "A";
+            count++;
+        }
+        else {
+            result = result + word[i];
+        }
+    }
+
+    var obj = {
+        originalString: word,
+        modifiedString: result,
+        numberReplaced: count,
+        length: word.length,
+    }
+    return obj;
+}
+console.log(lambda2());
