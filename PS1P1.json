@@ -5,4 +5,5 @@ const reverse_alphabet = function (word) {
 }
 
 /* test with "supercalifragilisticexpialidocious" */
-console.log(`${reverse_alphabet("supercalifragilisticexpialidocious")}`);
+const test = letters => reverse_alphabet(...letters);
+console.log(`In reverse alphabetical order, it is: ${test(["supercalifragilisticexpialidocious"])}`);
