@@ -1,0 +1,28 @@
+const evaluate = function (input_str) {
+    var split = input_str.split("");
+    var left = split[0];
+    var operator = split[1];
+    var right = split[2];
+    // console.log(operator, left, right, operator == "%");
+
+    if (operator == "+") {
+        return left + right;
+    }
+    else if (operator == "-") {
+        return left - right;
+    }
+    else if (operator == "*") {
+        return left * right;
+    }
+    else if (operator == "%") {
+        return left % right;
+    }
+    else if (operator == "^") {
+        return left ** right;
+    };
+
+}
+
+/* test with "8%3" */
+const expression = '8%3';
+console.log(`${expression} = ${evaluate(expression)}`)
