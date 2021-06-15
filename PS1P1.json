@@ -1,9 +1,0 @@
-const reverse_alphabet = function (word) {
-    var split = word.split("");
-    var result = split.sort().reverse();
-    return result.join("");
-}
-
-/* test with "supercalifragilisticexpialidocious" */
-const test = letters => reverse_alphabet(...letters);
-console.log(`In reverse alphabetical order, it is: ${test(["supercalifragilisticexpialidocious"])}`);
