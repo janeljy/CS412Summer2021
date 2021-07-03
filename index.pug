@@ -1,0 +1,10 @@
+const pug = require('pug');
+
+// Compile the source code
+const compiledFunction = pug.compileFile('data.pug');
+
+// Render a set of data
+console.log(compiledFunction({
+  name: 'city'
+  condition: 'weather'
+}));

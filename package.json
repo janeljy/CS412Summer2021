@@ -1,0 +1,12 @@
+{
+  "name": "ps4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+
+  },
+  "author": "",
+  "license": "ISC"
+}
